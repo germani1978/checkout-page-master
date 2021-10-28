@@ -1,133 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <link rel="icon" href="devchallenges.png" />
-    <link rel="stylesheet" href="style.css">
-    <title>checkout</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>checkout</title>
+</head>
 
-    <div class="todo contenedor">
+<body>
+  <div class="todo contenedor">
+    <!-- TITULO -->
+    <div class="titulo">
+      <h1>Checkout</h1>
+    </div>
 
-      <!-- TITULO -->
-      <div class="titulo">
-        <h1>Checkout</h1>
-        
-      </div>
+    <!-- CONTIENEDOR MUESTRAS -->
+    <div class="contenedor-muestra">
+      <div class="muestra muestra1">
+        <img src="./photo1.png" alt="" />
 
-      <!-- CONTIENEDOR MUESTRAS -->
-      <div class="contenedor-muestra"> 
-
-        <div class="muestra muestra1">
-          <img src="./photo1.png" alt="">
-
-          <div class="muestra-datos">
-            <h4>Vintage Backbag</h4>
-            <div class="muestra-precio">
-              <p class="pr-ahora">$54.99</p>
-              <p class="pr-antes"><del>$94.99</del></p>
-            </div>
-
-            <div class="muestra-input">
-              <button class="btn-menos">-</button>
-              <input type="text" value="1" name="" id="">
-              <button class="btn-mas" >+</button>
-            </div>
+        <div class="muestra-datos">
+          <h4>Vintage Backbag</h4>
+          <div class="muestra-precio">
+            <p class="pr-ahora">$54.99</p>
+            <p class="pr-antes"><del>$94.99</del></p>
           </div>
 
-         
-        </div><!-- MUESTRA 1 -->
-
-  
-        <div class="muestra muestra2">
-          <img src="./photo2.png" alt="">
-
-          <div class="muestra-datos">
-            <h4>Vintage Backbag</h4>
-            <div class="muestra-precio">
-              <p class="pr-ahora">$74.99</p>
-              <p class="pr-antes"><del>$124.99</del>></p>
-            </div>
-
-            <div class="muestra-input">
-              <button class="btn-menos">-</button>
-              <input type="text" value="1" name="" id="">
-              <button class="btn-mas" >+</button>
-            </div>
+          <div class="muestra-input">
+            <button class="btn-menos">-</button>
+            <input type="text" value="1" name="" id="" />
+            <button class="btn-mas">+</button>
           </div>
-
-          
-        </div> <!-- MUESTRA 2 -->
-
-
-        <!-- PRECIO -->
-        <div class="contenedor-precio">
-          <hr/>
-           <div class="shiping">
-             <p>Shiping</p><p>19</p>
-            </div>
-            <hr/>
-           <div class="total">
-            <p>Total</p><p>$148.98</p>
-           </div> 
         </div>
+      </div>
+      <!-- MUESTRA 1 -->
 
-      </div><!-- CONTENEDOR MUESTRA -->
+      <div class="muestra muestra2">
+        <img src="./photo2.png" alt="" />
+
+        <div class="muestra-datos">
+          <h4>Vintage Backbag</h4>
+          <div class="muestra-precio">
+            <p class="pr-ahora">$74.99</p>
+            <p class="pr-antes"><del>$124.99</del>></p>
+          </div>
+
+          <div class="muestra-input">
+            <button class="btn-menos">-</button>
+            <input type="text" value="1" name="" id="" />
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+      </div>
+      <!-- MUESTRA 2 -->
+
+      <!-- PRECIO -->
+      <div class="contenedor-precio">
+        <hr />
+        <div class="shiping">
+          <p>Shiping</p>
+          <p>19</p>
+        </div>
+        <hr />
+        <div class="total">
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENEDOR MUESTRA -->
+
+    <form action="" method="get" onsubmit="alert('Entrada Correcto')">
 
       <!-- CONTENEDOR CONTACTO -->
       <div class="info-contacto">
-
         <h3>Contact infomation</h3>
 
         <p>E-mail</p>
-        <input type="email" placeholder="Enter your email..." name="" id="">
-        
-        <p>Phone</p>
-        <input type="tel" placeholder="Phone number ..." name="" id="">
+        <input type="email" placeholder="Enter your email..." required />
 
+        <p>Phone</p>
+        <input type="tel" placeholder="Phone number ..." required pattern="[0-9]{3,8}" />
       </div>
 
       <!-- CONTENEDOR DIRECCION -->
       <div class="info-direccion">
+        <h3>Shipping address</h3>
 
-          <h3>Shipping address</h3>
+        <p>Full name</p>
+        <input type="text" placeholder="Rodney Cotton" required />
 
-          <p>Full name</p>
-          <input type="text" placeholder="Rodney Cotton" name="" id="">
+        <p>Address</p>
+        <input type="text" placeholder="Your address.." required />
 
-          <p>Address</p>
-          <input type="text" placeholder="Your address.." name="" id="">
+        <p>City</p>
+        <input class="city" type="text" placeholder="Your city.." required />
 
-          <p>City</p>
-          <input class="city" type="text" placeholder="Your city.." name="" id="">
-
-          <div class="info-pais-cpostal"  >
-              <div>
-                <p>Country</p>
-                <input type="text" placeholder="Your country.." name="" id="">
-              </div>
-              
-              <div>
-                <p>Postal Code</p>
-                <input type="number" placeholder="Your postal code.." name="" id="">
-              </div>
+        <div class="info-pais-cpostal">
+          <div>
+            <p>Country</p>
+            <input list="country" placeholder="Your country.." required />
+            <datalist id="country">
+              <option value="USA"></option>
+              <option value="Mexico"></option>
+              <option value="Canada"></option>
+              <option value="Japon"></option>
+              <option value="China"></option>
+            </datalist>
           </div>
 
-          <div class="checkbox">
-            <input type="checkbox" name="" id="">
-            <p>Save this information for next time</p>
+          <div>
+            <p>Postal Code</p>
+            <input type="number" placeholder="Your postal code.." required />
           </div>
+        </div>
 
-          <div class="conten-btn">
-            <button class="enviar" type="submit">Continue</button>
-          </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+          <p>Save this information for next time</p>
+        </div>
 
-      </div> <!--FIN CONTENEDOR DIRECCION -->
-    </div> <!-- TODO -->
-   
-  </body>
+        <div class="conten-btn">
+          <button class="enviar" type="submit">Continue</button>
+        </div>
+      </div>
+      <!--FIN CONTENEDOR DIRECCION -->
+    </form>
+  </div>
+  <!-- TODO -->
+</body>
 
 </html>
