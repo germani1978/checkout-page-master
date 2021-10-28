@@ -4,11 +4,130 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <link rel="icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="style.css">
     <title>checkout</title>
   </head>
 
   <body>
+
+    <div class="todo contenedor">
+
+      <!-- TITULO -->
+      <div class="titulo">
+        <h1>Checkout</h1>
+        
+      </div>
+
+      <!-- CONTIENEDOR MUESTRAS -->
+      <div class="contenedor-muestra"> 
+
+        <div class="muestra muestra1">
+          <img src="./photo1.png" alt="">
+
+          <div class="muestra-datos">
+            <h4>Vintage Backbag</h4>
+            <div class="muestra-precio">
+              <p class="pr-ahora">$54.99</p>
+              <p class="pr-antes"><del>$94.99</del></p>
+            </div>
+
+            <div class="muestra-input">
+              <button class="btn-menos">-</button>
+              <input type="text" value="1" name="" id="">
+              <button class="btn-mas" >+</button>
+            </div>
+          </div>
+
+         
+        </div><!-- MUESTRA 1 -->
+
+  
+        <div class="muestra muestra2">
+          <img src="./photo2.png" alt="">
+
+          <div class="muestra-datos">
+            <h4>Vintage Backbag</h4>
+            <div class="muestra-precio">
+              <p class="pr-ahora">$74.99</p>
+              <p class="pr-antes"><del>$124.99</del>></p>
+            </div>
+
+            <div class="muestra-input">
+              <button class="btn-menos">-</button>
+              <input type="text" value="1" name="" id="">
+              <button class="btn-mas" >+</button>
+            </div>
+          </div>
+
+          
+        </div> <!-- MUESTRA 2 -->
+
+
+        <!-- PRECIO -->
+        <div class="contenedor-precio">
+          <hr/>
+           <div class="shiping">
+             <p>Shiping</p><p>19</p>
+            </div>
+            <hr/>
+           <div class="total">
+            <p>Total</p><p>$148.98</p>
+           </div> 
+        </div>
+
+      </div><!-- CONTENEDOR MUESTRA -->
+
+      <!-- CONTENEDOR CONTACTO -->
+      <div class="info-contacto">
+
+        <h3>Contact infomation</h3>
+
+        <p>E-mail</p>
+        <input type="email" placeholder="Enter your email..." name="" id="">
+        
+        <p>Phone</p>
+        <input type="tel" placeholder="Phone number ..." name="" id="">
+
+      </div>
+
+      <!-- CONTENEDOR DIRECCION -->
+      <div class="info-direccion">
+
+          <h3>Shipping address</h3>
+
+          <p>Full name</p>
+          <input type="text" placeholder="Rodney Cotton" name="" id="">
+
+          <p>Address</p>
+          <input type="text" placeholder="Your address.." name="" id="">
+
+          <p>City</p>
+          <input class="city" type="text" placeholder="Your city.." name="" id="">
+
+          <div class="info-pais-cpostal"  >
+              <div>
+                <p>Country</p>
+                <input type="text" placeholder="Your country.." name="" id="">
+              </div>
+              
+              <div>
+                <p>Postal Code</p>
+                <input type="number" placeholder="Your postal code.." name="" id="">
+              </div>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="" id="">
+            <p>Save this information for next time</p>
+          </div>
+
+          <div class="conten-btn">
+            <button class="enviar" type="submit">Continue</button>
+          </div>
+
+      </div> <!--FIN CONTENEDOR DIRECCION -->
+    </div> <!-- TODO -->
    
   </body>
-  
+
 </html>
